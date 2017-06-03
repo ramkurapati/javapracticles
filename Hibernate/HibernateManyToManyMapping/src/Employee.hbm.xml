@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+    <class name="com.project.module.model.Employee" table="employee">
+	   <id name="empId" type="int" column="emp_id" >
+	      <generator class="assigned" />
+	   </id>
+
+	   <property name="firstName" column="first_name" type="string"/>
+       <property name="lastName" column="last_name" type="string"/>
+       <property name="salary" column="salary" type="int"/> 
+			
+	  <set name="meetings" cascade="all" table="employee_meeting">
+     
+        <key column="emp_id "/>
+        <many-to-many class="com.project.module.model.Meeting" column="meeting_id" />
+
+      </set>
+			
+	</class>
+</hibernate-mapping>

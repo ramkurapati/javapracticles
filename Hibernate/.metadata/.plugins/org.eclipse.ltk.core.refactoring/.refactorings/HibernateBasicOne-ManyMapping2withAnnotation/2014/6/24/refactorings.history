@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;HibernateBasicOne-ManyMapping2withAnnotation&apos;&#x0D;&#x0A;- Original project: &apos;HibernateBasicOne-ManyMapping2withAnnotation&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Player.hbm.xml&#x0D;&#x0A;     Team.hbm.xml" description="Delete elements" element1="src/Player.hbm.xml" element2="src/Team.hbm.xml" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1402587401460" subPackages="false" version="1.0"/>
+</session>

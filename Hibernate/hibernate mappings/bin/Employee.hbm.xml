@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+	<class name="roseindia.Employee" table="employee">
+		<id name="id" type="int" column="employee_id" >
+			<generator class="native"/>
+		</id>
+
+		<property 
+		  	name="name"
+			type="java.lang.String"
+			column="employee_name"
+			not-null="true"
+			length="50"
+		/>
+		
+		<one-to-one name="address" class="roseindia.EmployeeAddress" property-ref="empid"
+     	cascade="all"/>
+		
+	</class>
+
+
+	<class name="roseindia.EmployeeAddress" table="employee_address">
+		<id name="id" type="int" column="id" >
+			<generator class="native"/>
+		</id>
+
+		<property 
+		  	name="address"
+			type="java.lang.String"
+			column="address"
+			not-null="true"
+			length="255"
+		/>
+
+		<property 
+		  	name="country"
+			type="java.lang.String"
+			column="country"
+			not-null="true"
+			length="100"
+		/>
+	
+		<property 
+		  	name="empid"
+			type="int"
+			column="emp_id"
+			not-null="true"
+			length="100"
+		/>				
+
+	</class>
+	
+
+
+
+</hibernate-mapping>

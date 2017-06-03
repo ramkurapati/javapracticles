@@ -1,0 +1,52 @@
+package p1;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+
+import org.hibernate.annotations.IndexColumn;
+
+@Entity
+public  class Team
+{
+	  @Id
+	  @Column(name="team_code")
+	  private String teamcode;
+	  @Column(name="team_name")
+	  private String tname;
+
+      @OneToMany(cascade={CascadeType.ALL})
+	  @JoinColumn(name="team_code")
+	  @IndexColumn(name="idx")
+	  private List<Player> players;
+
+
+	
+	public String getTeamcode() {
+		return teamcode;
+	}
+	public void setTeamcode(String teamcode) {
+		this.teamcode = teamcode;
+	}
+	public String getTname() {
+			return tname;
+		}
+		public void setTname(String tname) {
+			this.tname = tname;
+		}
+		public List<Player> getPlayers() {
+			return players;
+		}
+		public void setPlayers(List<Player> players) {
+			this.players = players;
+		}
+	
+
+	
+	
+}

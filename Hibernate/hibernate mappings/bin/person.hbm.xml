@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+	<class name="roseindia.Person" table="person">
+		<id name="id" type="java.lang.String" column="ID" >
+			<generator class="assigned"/>
+		</id>
+	
+		<property 
+		  	name="firstName"
+			type="java.lang.String"
+			column="FIRSTNAME"
+			length="255"
+		/>
+		
+		<property 
+		  	name="lastName"
+			type="java.lang.String"
+			column="LASTNAME"
+			length="255"
+		/>
+		
+		<set name="phones" table="person_phone" cascade="all">
+			<key column="PERSONID"/>
+			<many-to-many column="PHONEID" class="roseindia.Phone"/>
+		</set>
+		
+		<set name="persons" inverse="true" table="person_phone">
+			<key column="PHONEID"/>
+		    <many-to-many column="PERSONID" class="roseindia.Person"/>
+		</set>
+		
+		
+	</class>
+
+</hibernate-mapping>

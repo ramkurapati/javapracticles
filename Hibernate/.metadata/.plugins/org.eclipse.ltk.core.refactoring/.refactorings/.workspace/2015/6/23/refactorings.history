@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Hibernate with SpringcoreQSISystemTest&apos; to &apos;Hibernate-CoreJava QSISystemTest&apos;" description="Rename resource &apos;Hibernate with SpringcoreQSISystemTest&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Hibernate with SpringcoreQSISystemTest" name="Hibernate-CoreJava QSISystemTest" stamp="1433163860537" updateReferences="true"/>
+</session>

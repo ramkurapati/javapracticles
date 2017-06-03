@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+	<class name="roseindia.Phone" table="phone">
+		<id name="id" type="java.lang.String" column="ID" >
+			<generator class="assigned"/>
+		</id>
+	
+		<property 
+		  	name="contactnumber"
+			type="java.lang.String"
+			column="CONTACTNUMBER"
+			length="10"
+		/>
+		
+		<property 
+		  	name="phonetype"
+			type="java.lang.String"
+			column="PHONETYPE"
+			length="255"
+		/>
+				
+	</class>
+
+</hibernate-mapping>

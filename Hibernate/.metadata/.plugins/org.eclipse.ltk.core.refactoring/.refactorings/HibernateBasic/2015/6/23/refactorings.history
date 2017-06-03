@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Hibernate-CoreJava QSISystemTest&apos;&#x0D;&#x0A;- Original project: &apos;HibernateBasic&apos;&#x0D;&#x0A;- Destination element: &apos;Hibernate-CoreJava QSISystemTest&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     hibernate-configuration-3.0.dtd&#x0D;&#x0A;     hibernate-mapping-3.0.dtd" description="Copy files" element1="hibernate-configuration-3.0.dtd" element2="hibernate-mapping-3.0.dtd" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1433166190735" target="/Hibernate-CoreJava QSISystemTest" units="0" version="1.0"/>
+</session>

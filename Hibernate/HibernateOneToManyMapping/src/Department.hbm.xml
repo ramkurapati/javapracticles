@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+ <class name="com.project.module.model.Department" table="department">
+	 <id name="depotid" type="long">
+		   <column name="depot_id"/>
+  	 </id>
+     <property name="depotname" column="depot_name" type="string"/>
+    
+     <set name="employees" cascade="all" >
+            <key>
+                <column name="depot_id" />
+            </key>
+            <one-to-many class="com.project.module.model.Employee" />
+     </set>
+    
+ </class>
+ 
+</hibernate-mapping>

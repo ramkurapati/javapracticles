@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+D:\ramWS4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1792435354.index
+\Struts2Exampleandlib17\src

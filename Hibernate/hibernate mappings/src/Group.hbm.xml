@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="roseindia.Group" table="gropuptable">
+    	<id name="id" type="int" column="id" >
+			<generator class="native"/>
+		</id>
+        <property name="name" type="java.lang.String" column="name" length="50" /> 
+                
+        <list name="stories" cascade="all">
+            <key column="parent_id"/>
+            <index column="idx"/>
+            <one-to-many class="roseindia.Story"/>
+        </list>
+        
+         
+    </class>
+    
+    <class name="roseindia.Story" table="story">
+    	<id name="id" type="int" column="id" >
+			<generator class="increment"/>
+		</id>
+         
+        <property name="info" type="java.lang.String" column="info" length="255" /> 
+        <many-to-one name="group" class="roseindia.Group" column="parent_id"/>
+       
+    </class>
+</hibernate-mapping>
