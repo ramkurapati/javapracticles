@@ -1,0 +1,10 @@
+INDEX VERSION 1.122+D:\ramWS5(RESTfulWebServices)\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2988835113.index
+1100584488.index
+2847532128.index
+4042903246.index
+2912159836.index
+1603255586.index
+3032719156.index
+2809177787.index
+692139902.index
