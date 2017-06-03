@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="collections"/>
+	<classpathentry kind="src" path="Arrays"/>
+	<classpathentry kind="src" path="Generics(1.5 feature)"/>
+	<classpathentry kind="src" path="IOstreams"/>
+	<classpathentry kind="src" path="Loops"/>
+	<classpathentry kind="src" path="p1"/>
+	<classpathentry kind="src" path="OOPs Concepts"/>
+	<classpathentry kind="src" path="Serialization&amp;DeSerialization"/>
+	<classpathentry kind="src" path="wrapperclasses"/>
+	<classpathentry kind="src" path="singletonfactory"/>
+	<classpathentry kind="src" path="DP1-CreationalDesignPattren"/>
+	<classpathentry kind="src" path="onlineExamSolutions"/>
+	<classpathentry kind="src" path="AccessModifiers"/>
+	<classpathentry kind="src" path="Modifiers"/>
+	<classpathentry kind="src" path="Class&amp;Objects basics"/>
+	<classpathentry kind="src" path="Types of methods"/>
+	<classpathentry kind="src" path="Varargs(1.5 feature)"/>
+	<classpathentry kind="src" path="Java.lang package"/>
+	<classpathentry kind="src" path="Operators"/>
+	<classpathentry kind="src" path="Strings,StringBuffer,StringBuilder"/>
+	<classpathentry kind="src" path="Conversions"/>
+	<classpathentry kind="src" path="Interfaces"/>
+	<classpathentry kind="src" path="GarbageCollector"/>
+	<classpathentry kind="src" path="Java.util package"/>
+	<classpathentry kind="src" path="Exception 1(UncheckedExceptions)"/>
+	<classpathentry kind="src" path="Enumerations"/>
+	<classpathentry kind="src" path="Keywords"/>
+	<classpathentry kind="src" path="enum(1.5 feature)"/>
+	<classpathentry kind="src" path="jdbc"/>
+	<classpathentry kind="src" path="Assertion(Java4feature)"/>
+	<classpathentry kind="src" path="CallByValue"/>
+	<classpathentry kind="src" path="Internationalization"/>
+	<classpathentry kind="src" path="AbstractClass"/>
+	<classpathentry kind="src" path="Exception 2(CheckedExceptions)"/>
+	<classpathentry kind="src" path="Static imports(1.5 feature)"/>
+	<classpathentry kind="src" path="DP2-J2EEDesignPattren"/>
+	<classpathentry kind="src" path="RelationshipBWclasses"/>
+	<classpathentry kind="src" path="MarkerInterfaces"/>
+	<classpathentry kind="src" path="lambda"/>
+	<classpathentry kind="src" path="JUnit"/>
+	<classpathentry kind="lib" path="lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="lib/mail-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/smtp-1.4.4.jar"/>
+	<classpathentry kind="lib" path="lib/com.mysql.jdbc_5.1.5.jar" sourcepath="lib/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="lib/org.apache.commons.collections.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_31">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
